@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment 2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="mathProblem">
+			<!-- leave this div empty!-->
+		</div>
+		<br>
+		<button onclick="answerit()">click me to answer</button>
+
+		<script>
+			let myDiv = document.getElementById("mathProblem");
+			//fill in the code here to generate two random numbers
+			let x = Math.round(Math.random() * 10);
+			let y = Math.round(Math.random() * 100)+10;
+			//then write your world problem!
+			myDiv.innerHTML = "A student rips "+ x +" page(s) from his notebook, if his notebook contains "+ y +" pages left after he is done. How many pages did it initially contain?" ;
+			function answerit() {
+				alert((x+y)+ " page(s)"); 
+				location.reload();}
+		</script>
+		<!--I added a button to show the answer to the word problem. 
+			I also added a way which the numbers reload when you click the button to answer. 
+			Just an add-on from me. 
+			Thank you -->
+	</body>
+</html>
